@@ -25,7 +25,7 @@ app.get('/health', (req, res) => {
 const db = mysql.createConnection({
   host: process.env.DB_HOST || 'localhost',
   user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '', // Contraseña de tu base de datos
+  password: process.env.DB_PASSWORD || 'polo', // Contraseña de tu base de datos
   database: process.env.DB_NAME || 'penka',
   port: process.env.DB_PORT || 3306
 });
